@@ -250,6 +250,8 @@ class PositionalEmbedding2FCN(nn.Module):
         return self.pe[:, :x.size(1)]
 
 
+
+
 class FCN(nn.Module):
     """
     embedding_dim: 词嵌入的维度 一般是长度越短嵌入维度越低 即二进制编码中2^3=8 即只需要三位二进制就可以编码长度为8的序列
